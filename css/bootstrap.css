@@ -4173,7 +4173,7 @@ a.list-group-item.active > .badge,
   height: auto;
   display: block;
 }
-.thumbnail > img {
+.thumbnail > img, .thumbnail > a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -4182,7 +4182,7 @@ a.thumbnail:hover,
 a.thumbnail:focus {
   border-color: #428bca;
 }
-.thumbnail > img {
+.thumbnail > img, .thumbnail > a > img {
   margin-left: auto;
   margin-right: auto;
 }

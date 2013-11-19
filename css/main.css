@@ -267,3 +267,7 @@ i.scroll:hover {
 .size-m {
   font-size: 1.5em
 }
+
+.shy-a, .shy-a:hover {
+  color:inherit;
+}
