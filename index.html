@@ -9,6 +9,7 @@
     <title>Alexander Mistakidis</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -34,11 +35,13 @@
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
       <div class="vert-text">
+        <div class="expandUp">
         <h1>Hello, I am Alexander Mistakidis</h1>
         <h3>I'm a computer science undergraduate student at the University of Waterloo.</h3>
         <h3>I'm currently doing an internship at <a href="http://www.pumpup.co" target="_blank">PumpUp</a>.</h3>
+        </div>
         <a href="#about" class="btn btn-default btn-lg spaced">What else?</a>
-        <ul class="list-inline  ">
+        <ul class="list-inline">
           <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github" ><i class="fa fa-github fa-3x"></i></a></li>
           <li><a href="http://stackoverflow.com/users/1750362/alexander" target="_blank" title="Stackoverflow" alt="Stackoverflow"><i class="fa fa-stack-overflow fa-3x"></i></a></li>
           <li><a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a></li>
@@ -54,20 +57,15 @@
       <div class="container">
         <div class="row">
          <div class="col-md-2  col-md-offset-2 text-center">
-         <img src="img/pixelme.png"/>
+         <img class="toSlideRight" style="visibility:hidden" src="img/pixelme.png"/>
           </div>
           <div class="col-md-6 text-center">
-            <h2>I love to create.</h2>
+            <h2 class="toSlideDown" style="visibility:hidden">I love to create.</h2>
             <p class="lead">My key assets as a developer are communication skills and an eye for design. I love building and iterating—<em>fast</em>.<br> I am a steadfast optimist, an avid learner, and am only stubborn about two things: keeping it simple and being open-minded.</p>
           </div>
-
         </div>
         <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
+          <div class="col-md-8 col-md-offset-2 text-center toSlideLeft">
             <h3>Technical Skills</h3>
           
           <dl class="dl-horizontal lead">
@@ -162,7 +160,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary" style="margin: 0px 0px 21px 0px;">Resumé</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary toSlideDown" style="margin: 0px 0px 21px 0px;">Resumé</a>
 
             <ul class="list-inline">
               <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github"><i class="fa fa-github fa-2x"></i></a></li>
@@ -185,11 +183,32 @@
     </footer>
     <!-- /Footer -->
 
+
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function() {
+            $('.toSlideRight').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+600) {
+                    $(this).addClass("slideRight");
+                }
+            });
+            $('.toSlideDown').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+600) {
+                    $(this).addClass("slideDown");
+                }
+            });
+        });
+    </script>
 
   </body>
 
