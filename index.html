@@ -10,8 +10,8 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
-
     <link href="css/main.css" rel="stylesheet">
+    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
@@ -178,32 +178,10 @@
     </footer>
     <!-- /Footer -->
 
-
-    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(window).scroll(function() {
-            $('.toSlideRight').each(function(){
-            var imagePos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow+600) {
-                    $(this).addClass("slideRight");
-                }
-            });
-            $('.toSlideDown').each(function(){
-            var imagePos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow+600) {
-                    $(this).addClass("slideDown");
-                }
-            });
-        });
-    </script>
 
   </body>
 
