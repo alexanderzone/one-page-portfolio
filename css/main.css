@@ -137,6 +137,13 @@ body {
   margin-bottom: 15px;
 }
 
+.pixel-me {
+  visibility: hidden;
+  height: 219px;
+  width: 128px;
+  background: url(../img/pixelme.png);
+}
+
 i.service-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
