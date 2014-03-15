@@ -30,25 +30,18 @@ $(function() {
 
 $(window).scroll(function() {
   $('.toSlideRight').each(function(){
-  var imagePos = $(this).offset().top;
+    var imagePos = $(this).offset().top;
 
-  var topOfWindow = $(window).scrollTop();
+    var topOfWindow = $(window).scrollTop();
     if (imagePos < topOfWindow+600) {
       $(this).addClass("slideRight");
     }
   });
-  $('.toHatch').each(function(){
-  var imagePos = $(this).offset().top;
 
-  var topOfWindow = $(window).scrollTop();
-    if (imagePos < topOfWindow+600) {
-      $(this).addClass("fadeIn");
-    }
-  });
   $('.toSlideDown').each(function(){
-  var imagePos = $(this).offset().top;
+    var imagePos = $(this).offset().top;
 
-  var topOfWindow = $(window).scrollTop();
+    var topOfWindow = $(window).scrollTop();
     if (imagePos < topOfWindow+600) {
       $(this).addClass("slideDown");
     }
