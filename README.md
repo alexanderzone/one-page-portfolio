@@ -6,8 +6,7 @@ This repo is meant to offer an example of a one page website using Bootstrap 3.
 [Live Demo](http://csclub.uwaterloo.ca/~aamistak/ "Live Demo")
 
 
-A Word on Bootstrap
-===================
+### A Word on Bootstrap
 
 Bootstrap is easy to pick up, but isn't perfect by any means.  It is a great way to introduce someone to responsive web site design, but largely holds a lot of anti-patterns and expensive operations.  You should be conscious of these and then consider why Bootstrap is still good for you.
 
