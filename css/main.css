@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x:hidden;
 }
 
 .vert-text {
@@ -17,6 +18,14 @@ body {
   margin: 0;
   font-size: 4.5em;
   font-weight: 300;
+}
+
+.long-word {
+  white-space: nowrap;
+}
+
+.resume {
+  margin: 0px 0px 20px 0px;
 }
 
 /* Side Menu */
@@ -189,7 +198,6 @@ i.service-icon {
   text-align: center;
   background-color: transparent;
   border: 0;
-  margin-bottom: 20px;
 }
 
 #portfolio .thumbnail img {
@@ -270,6 +278,13 @@ i.scroll:hover {
 	height: 75%;
   }
 
+  .resume {
+    margin: 35px;
+  }
+
+  .call-to {
+    margin-bottom: 35px;
+  }
 }
 
 .spaced {
