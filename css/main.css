@@ -16,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 4.5em;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 /* Side Menu */
@@ -137,10 +137,11 @@ body {
   margin-bottom: 15px;
 }
 
-.pixel-me {
+.pixelMe {
   visibility: hidden;
-  height: 219px;
+  height: 218px;
   width: 128px;
+  margin: 0 auto;
   background: url(../img/pixelme.png);
 }
 
