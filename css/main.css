@@ -4,7 +4,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x:hidden;
 }
 
 .vert-text {
@@ -16,7 +15,7 @@ body {
 .vert-text h1 {
   padding: 0;
   margin: 0;
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: 300;
 }
 
@@ -278,7 +277,7 @@ i.scroll:hover {
 	height: 75%;
   }
 
-  .resume {
+  .resume.space-m {
     margin: 35px;
   }
 
@@ -291,10 +290,18 @@ i.scroll:hover {
   margin:35px;
 }
 
+.block {
+  display:block;
+}
+
 .size-m {
   font-size: 1.5em
 }
 
 .shy-a, .shy-a:hover {
   color:inherit;
+}
+
+.shy-a h1 {
+  background: #0a5175;
 }
