@@ -10,6 +10,8 @@ body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  color: white;
+  text-shadow: black 3px 1px 3px;
 }
 
 .vert-text h1 {
@@ -23,8 +25,18 @@ body {
   white-space: nowrap;
 }
 
+.list-inline > li {
+  vertical-align: middle;
+}
+
+.vert-text .list-inline a {
+  color: white;
+}
+
 .resume {
   margin: 0px 0px 20px 0px;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 /* Side Menu */
@@ -235,6 +247,10 @@ i.service-icon {
 
 .call-to-action .btn {
   margin: 10px;
+}
+
+.call-to {
+  text-shadow: none;
 }
 
 /* Map */
