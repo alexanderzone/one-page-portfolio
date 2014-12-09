@@ -35,6 +35,7 @@ $(function() {
       }
     }
   });
+
 });
 
 $(window).scroll(function() {
@@ -55,4 +56,10 @@ $(window).scroll(function() {
       $(this).addClass("slideDown");
     }
   });
+});
+
+jQuery.scrollDepth({
+  elements: ['#portfolio', '#contact'],
+  percentage: false,
+  nonInteraction: false,
 });
