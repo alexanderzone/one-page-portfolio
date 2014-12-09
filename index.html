@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -14,170 +15,183 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-reorder"></i></a>
     <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-        <li class="sidebar-brand"><a href="#top">Alexander Mistakidis</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle" onClick="ga('send', '_trackEvent', 'Navbar', 'Toggle', 'Navbar toggle');"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="#top">Alexander Mistakidis</a>
+            </li>
+            <li><a href="#about" onClick="ga('send', '_trackEvent', 'Navbar', 'About');">About</a>
+            </li>
+            <li><a href="#portfolio" onClick="ga('send', '_trackEvent', 'Navbar', 'Portfolio');">Portfolio</a>
+            </li>
+            <li><a href="#contact" onClick="ga('send', '_trackEvent', 'Navbar', 'Contact');">Contact</a>
+            </li>
+        </ul>
     </div>
     <!-- /Side Menu -->
-  
+
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
-      <div class="vert-text">
-        <div class="expandUp">
-        <h1>
+        <div class="vert-text">
+            <div class="expandUp">
+                <h1>
           <div>Hello,</div>
           <span class="long-word">I am</span>
           Alexander Mistakidis.
         </h1>
-        <h3>Cutting edge web geek. Startup fanatic. Computer Science @Waterloo.</h3>
-        </div>
-        <ul class="list-inline spaced">
-          <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github" ><i class="fa fa-github fa-3x"></i></a></li>
-          <li><a href="http://stackoverflow.com/users/1750362/alexander-mistakidis" target="_blank" title="Stackoverflow" alt="Stackoverflow"><i class="fa fa-stack-overflow fa-3x"></i></a></li>
-          <li><a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a></li>
-          <li><a href="mailto:mistakidis@gmail.com" title="Email me" alt="Email me" target="_blank"><i class="fa fa-envelope-o fa-3x"></i></a></li>
-          <li><a href="resume.pdf" target="_blank" class="resume space-m">Resumé</a></li>
-        </ul>
-        <a href="#about" class="btn btn-default btn-lg call-to">What else?</a>
+                <h3>Cutting edge web geek. Startup fanatic. Computer Science @Waterloo.</h3>
+            </div>
+            <ul class="list-inline spaced">
+                <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github top');"><i class="fa fa-github fa-3x"></i></a>
+                </li>
+                <li><a href="http://stackoverflow.com/users/1750362/alexander-mistakidis" target="_blank" title="Stackoverflow" alt="Stackoverflow" onClick="ga('send', '_trackEvent', 'Links', 'Stackoverflow', 'Stackoverflow top');"><i class="fa fa-stack-overflow fa-3x"></i></a>
+                </li>
+                <li><a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn top');"><i class="fa fa-linkedin fa-3x"></i></a>
+                </li>
+                <li><a href="mailto:mistakidis@gmail.com" title="Email me" alt="Email me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
+                </li>
+                <li><a href="resume.pdf" target="_blank" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');">Resumé</a>
+                </li>
+            </ul>
+            <a href="#about" class="btn btn-default btn-lg call-to" onClick="ga('send', '_trackEvent', 'Links', 'What else');">What else?</a>
 
-      </div>
+        </div>
 
     </div>
     <!-- /Full Page Image Header Area -->
-  
+
     <!-- Intro -->
     <div id="about" class="intro">
-      <div class="container">
-        <div class="row">
-         <div class="col-md-2  col-md-offset-2 text-center">
-         <div class="pixelMe toSlideRight"/></div>
-          </div>
-          <div class="col-md-6 text-center">
-            <h2>I love to create.</h2>
-            <p class="lead">I'm passionate about collaborating on innovation. As a deep thinker and an avid learner, I love to distill things down to their essence. </p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2  col-md-offset-2 text-center">
+                    <div class="pixelMe toSlideRight" /></div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>I love to create.</h2>
+                <p class="lead">I'm passionate about collaborating on innovation. As a deep thinker and a voracious learner, I love to distill things down to their essence. </p>
+            </div>
         </div>
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h3>Technical Summary</h3>
-            <hr>
-            <dl class="dl-horizontal lead">
-              <dt>Web Development</dt>
-              <dd>HTML 5, CSS 3, Sass, Bootstrap, JavaScript, CoffeeScript, jQuery, Angular JS, Backbone, underscore, PHP, node</dd>
-              <dt>Other Languages</dt>
-              <dd>Python, Java, C++, Scheme, Bash script</dd>
-              <dt>Databases</dt>
-              <dd>MySQL, MongoDB, Parse</dd>
-              <dt>Design</dt>
-              <dd>Photoshop, Illustrator, InDesign, Blender</dd>
-            </dl>
-            <a href="#contact">See more <i class="fa fa-level-down"></i></a>
-          </div>
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>Technical Summary</h3>
+                <hr>
+                <dl class="dl-horizontal lead">
+                    <dt>Web Development</dt>
+                    <dd>HTML 5, CSS 3, Sass, Bootstrap, JavaScript, CoffeeScript, jQuery, Angular JS, Backbone, underscore, PHP, node</dd>
+                    <dt>Other Languages</dt>
+                    <dd>Python, Java, C++, Scheme, Bash script</dd>
+                    <dt>Databases</dt>
+                    <dd>MySQL, MongoDB, Parse</dd>
+                    <dt>Design</dt>
+                    <dd>Photoshop, Illustrator, InDesign, Blender</dd>
+                </dl>
+                <a href="#contact" onClick="ga('send', '_trackEvent', 'Links', 'See more');">See more <i class="fa fa-level-down"></i></a>
+            </div>
         </div>
-      </div>
+    </div>
     </div>
     <!-- /Intro -->
     <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <a class="shy-a" href="#portfolio"><h2>Projects</h2></a>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Projects</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- Portfolio -->
     <div id="portfolio" class="callout">
-      <hr>
+        <hr>
 
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/mapd.jpg" alt="...">
-            <div class="caption">
-              <h3>MapD</h3>
-              <p>Created company branding and <a href="http://map-d.com">website</a>. Redesigned the MapD demo interface. Iterating on emerging tech on web data visualization.</p>
-              <p>SASS, Three.js, D3.js</p>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/mapd.jpg" alt="...">
+                    <div class="caption">
+                        <h3>MapD</h3>
+                        <p>Created company branding and <a href="http://map-d.com">website</a>. Redesigned the MapD demo interface. Iterating on emerging tech on web data visualization.</p>
+                        <p>Three.js, SASS, D3.js</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div>
-              <img src="img/pumpup.jpg" alt="...">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div>
+                        <img src="img/pumpup.jpg" alt="...">
+                    </div>
+                    <div class="caption">
+                        <h3>PumpUp</h3>
+                        <p>Built the goal and progress graph frameworks to improve retention and helped optimize the <a href="http://pumpup.co">PumpUp</a> app to handle the jump from 100k users to 1M+.</p>
+                        <p>Backbone.js, CoffeeScript, Parse</p>
+                    </div>
+                </div>
             </div>
-            <div class="caption">
-              <h3>PumpUp</h3>
-              <p>Built the goal and progress graph frameworks to improve retention and helped optimize the <a href="http://pumpup.co">PumpUp</a> app to handle the jump from 100k users to 1M+.</p>
-              <p>CoffeeScript, Backbone.js, Parse</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/ttc.jpg" alt="...">
-            <div class="caption">
-              <h3>Ten Thousand Coffees</h3>
-              <p>Optimized on-boarding process and added AJAX content crawlability and SEO for the social network <a href="http://tenthousandcoﬀees.com">Ten Thousand Coﬀees</a>.</p>
-              <p>Backbone.js, node.js, MongoDB</p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/ttc.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Ten Thousand Coffees</h3>
+                        <p>Optimized on-boarding process and added AJAX content crawlability and SEO for the social network <a href="http://tenthousandcoﬀees.com">Ten Thousand Coﬀees</a>.</p>
+                        <p>node.js, Backbone.js, MongoDB</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- /Portfolio -->
 
     <!-- Findoutmore -->
     <div id="contact" class="call-to-action">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- /Findoutmore -->
-        <hr>
+    <hr>
 
     <!-- Footer -->
     <footer>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary resume toSlideDown">Resumé</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary resume toSlideDown" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume bottom');">Resumé</a>
 
-            <ul class="list-inline">
-              <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github"><i class="fa fa-github fa-2x"></i></a></li>
-              <li><a href="http://stackoverflow.com/users/1750362/alexander" target="_blank" title="Stackoverflow" alt="Stackoverflow"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
-              <li><a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>
-            <ul class="list-unstyled size-m">
-              <li><i class="fa fa-map-marker"></i> San Francisco, California</li>
-              <li><i class="fa fa-envelope-o"></i> <a href="mailto:mistakidis@gmail.com" target="_blank">mistakidis@gmail.com</a></li>
-            </ul>
-            <div class="top-scroll">
-              <a href="#top" title="Back to top" alt="Back to top" ><i class="fa fa-angle-double-up scroll fa-4x"></i></a>
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github bottom');"><i class="fa fa-github fa-2x"></i></a>
+                        </li>
+                        <li><a href="http://stackoverflow.com/users/1750362/alexander" target="_blank" title="Stackoverflow" alt="Stackoverflow" onClick="ga('send', '_trackEvent', 'Links', 'Stackoverflow', 'Stackoverflow bottom');"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                        </li>
+                        <li><a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn bottom');"><i class="fa fa-linkedin fa-2x"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled size-m">
+                        <li><i class="fa fa-map-marker"></i> San Francisco, California</li>
+                        <li><i class="fa fa-envelope-o"></i> <a href="mailto:mistakidis@gmail.com" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email bottom');">mistakidis@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top" title="Back to top" alt="Back to top"><i class="fa fa-angle-double-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    <p>Like the website? <a href="https://github.com/aamistak" target="_blank" class="long-word" onClick="ga('send', '_trackEvent', 'Links', 'Fork it');">Fork it on GitHub</a>
+                    </p>
+                </div>
             </div>
-            <hr>
-            <p>Background images via <a href="http://join.deathtothestockphoto.com/" target="_blank" class="long-word">Death to the Stock Photo</a></p>
-            <p>Like the website?  <a href="https://github.com/aamistak" target="_blank" class="long-word">Fork it on GitHub</a></p>
-          </div>
         </div>
-      </div>
     </footer>
     <!-- /Footer -->
 
@@ -186,6 +200,6 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
 
-  </body>
+</body>
 
 </html>
