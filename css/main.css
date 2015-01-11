@@ -193,9 +193,11 @@ i.service-icon {
 
 /* Portfolio */
 
-.portfolio {
-  padding: 50px 0;
+#portfolio .row {
+  max-width: 900px;
+  margin:0 auto;
 }
+
 
 #portfolio .caption {
   width: 250px;
